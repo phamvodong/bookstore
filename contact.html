@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dong bookstore</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <logo>
+            <a href="homepage.html">
+                <img src="./photo/bookstore.png" alt="homepage">
+            </a>
+        </logo>
+        <nav>
+            <a href="homepage.html">Homepage</a>
+            <a href="art.html">Art and photography</a>
+            <a href="fiction.html">Fiction</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form onsubmit="return false" method="post" action="contact.html" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="purpose">Hello there! How I can help you!</label>
+                </div>
+                <div class="form-field">
+                    <select id="purpose" name="purpose">
+                        <option value="sell">I want to sell book</option>
+                        <option value="buy">I want to buy book</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="name">Your name</label>
+                </div>
+                <div class="form-field">
+                    <input type="text" name="name" id="name">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="email">Your email</label>
+                </div>
+                <div class="form-field">
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="phone">Your phone</label>
+                </div>
+                <div class="form-field">
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10-11}" placeholder="Enter 10 digits">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label>How can we contact you</label>
+                </div>
+                <div class="form-field">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="contactEmail" name="contactEmail" value="email">
+                            <label for="contactEmail">By Email</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="contactPhone" name="contactPhone" value="phone">
+                            <label for="contactPhone">By Phone</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label>Do you want to receive our weekly newsletter</label>
+                </div>
+                <div class="form-field">
+                    <ul>
+                        <li>
+                            <input type="radio" id="yes" name="receive" value="yes">
+                            <label for="yes">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="no" name="receive" value="no">
+                            <label for="no">No</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label>Your message</label>
+                </div>
+                <div class="form-field">
+                    <textarea cols="40" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="reset" value="reset">Reset</button>
+                <button type="submit" value="submit">Submit</button>
+            </div>
+
+        </from>
+    </main>
+    <footer>
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
