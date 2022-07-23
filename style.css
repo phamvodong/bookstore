@@ -372,6 +372,23 @@ textarea {
     margin: 0;
     flex-direction: column;
   }
+  #largeImg img {
+    width: 60vw;
+  }
+  #smallImg {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #smallImg ul li {
+    display: inline-flex;
+    margin: 0 5vw 0 5vw;
+  }
+  #smallImg ul li img {
+    width: 10vw;
+    height: auto;
+  }
   footer {
     display: flex;
     flex-direction: column;
