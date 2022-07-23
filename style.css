@@ -306,7 +306,7 @@ textarea {
     margin-right: 5%;
   }
   .book img {
-    width: 50vmax;
+    width: 50vw;
   }
   footer {
     display: flex;
@@ -375,5 +375,37 @@ textarea {
   footer {
     display: flex;
     flex-direction: column;
-  }
+  /* }
+  @media only screen and (max-width: 390px) {
+    #welcome {
+      margin: 0;
+      background-image: linear-gradient(
+        rgb(223, 196, 178),
+        rgb(191, 118, 153),
+        rgb(223, 196, 178)
+      );
+      font-size: 10vw;
+      color: white;
+    }
+  
+    #welcome h1 {
+      font-size: 1em;
+    }
+  
+    #welcome em {
+      font-size: 0.25em;
+    }
+    #nav nav {
+      display: flex;
+      margin: 0;
+      flex-direction: column;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .book img {
+      width: 30vw;
+    }
+} */
 }
