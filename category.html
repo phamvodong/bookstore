@@ -10,19 +10,26 @@
 
 <body>
     <header>
-        <logo>
-            <a href="homepage.html">
-                <img src="photo/bookstore.png" alt="homepage">
-            </a>
-        </logo>
-        <nav>
-            <a href="homepage.html">Homepage</a>
-            <a href="category.html">Art and photography</a>
-            <a href="category.html">Fiction</a>
-        </nav>
+        <div id="nav">
+            <logo>
+                <a href="homepage.html">
+                    <img src="photo/bookstore.png" alt="homepage">
+                </a>
+            </logo>
+            <nav>
+                <a href="homepage.html" >Homepage</a>
+                <a href="category.html" id="active">Art and photography</a>
+                <a href="category.html">Fiction</a>
+            </nav>
+        </div>
+        <div id = "welcome">
+            <h1>Art and photography</h1>
+            <em>“When I make a picture, I make love.”<br>
+                <span style="font-weight: bold;" >Alfred Stieglitz</span></span></em>
+        </div>
     </header>
     <main>
-        <div class="art">
+        <div class="category">
             <a href="#">
                 <h1>Architecture</h1>
             </a>
@@ -41,7 +48,7 @@
                 </a>
             </div>
         </div>
-        <div class="film">
+        <div class="category">
             <a href="#">
                 <h1>Film, Tv and radio</h1>
             </a>
