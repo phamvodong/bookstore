@@ -1,179 +1,324 @@
 /* All page */
-html{
-    width: 100%;
-    box-sizing: border-box;
+html {
+  width: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 /* Body style */
-body{
-    height: auto;
-    text-align: center;
-    color: black;
-    background-color: rgb(223, 196, 178);
+body {
+  height: auto;
+  text-align: center;
+  color: black;
+  background-color: rgb(223, 196, 178);
 }
 /* Link style */
-a{
-    color: black;
-    text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
 /* All header */
-header{
-    margin: 0 10% 5% 10% ;
+header {
+  width: 100%;
 }
 /* Logo */
-header logo a img{
-    display: flex;
-
+header logo a img {
+  display: flex;
 }
 /* All navigation */
-nav{
-    text-align: right;
+nav {
+  text-align: right;
 }
 
-nav a{
-    margin-left: 50px;
+nav a {
+  margin-left: 50px;
 }
 /* Main section */
-main{
-    margin: 10% 5% 10% 5%;
-    
+main {
+  margin: 10% 5% 10% 5%;
 }
 /* Footer */
-footer nav a{
-    color: white;
-    font-size: x-large;
-    font-weight: bolder;
-    text-shadow: 2px 2px 2px rgba(206,89,55,0);
+footer nav a {
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
+}
+#nav {
+  margin: 0 10% 5% 10%;
 }
 /* Top navigate design */
-#nav a{
-    font-size: 30px;
-    border-radius: 50;
-    color: whitesmoke;
+#nav a {
+  font-size: 30px;
+  border-radius: 50;
+  color: whitesmoke;
 }
 
-#nav a:hover{
-    color: lightblue;
+#nav a:hover {
+  color: lightblue;
 }
 /* Inditify the active page */
-#active{
-    font-weight: bold;
+#active {
+  font-weight: bold;
 }
 /* Welcome section */
-#welcome{
-    background-image: linear-gradient(rgb(223, 196, 178),rgb(191, 118, 153),rgb(223, 196, 178));
-    font-size: 100px;
-    margin: 1% -13% 0 -13%;
-    padding: 5% 10% 10% 10%;
-    color: white;
+#welcome {
+  width: 100%;
+  background-image: linear-gradient(
+    rgb(223, 196, 178),
+    rgb(191, 118, 153),
+    rgb(223, 196, 178)
+  );
+  font-size: 100px;
+  padding: 5% 0 10% 0;
+  color: white;
 }
-#welcome h1{
-    font-size: 1em;
+#welcome h1 {
+  font-size: 1em;
 }
-#welcome em{
-    font-size: 0.25em;
+#welcome em {
+  font-size: 0.25em;
 }
 
 /* CLass category */
-.category{
-    margin-bottom: 10%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-image: linear-gradient(rgb(223, 196, 178),rgb(190, 195, 197),rgb(223, 196, 178));
-    padding: 2vw 0 10vw 0 ;
+.category {
+  margin-bottom: 10%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(
+    rgb(223, 196, 178),
+    rgb(190, 195, 197),
+    rgb(223, 196, 178)
+  );
+  padding: 2vw 0 10vw 0;
 }
-.category a:hover{
-    color: white;
-    background-color: rgb(131, 66, 66);
+.category a:hover {
+  color: white;
+  background-color: rgb(131, 66, 66);
 }
 /* Class book */
-.book{
-    display: inline-flex;
+.book {
+  display: inline-flex;
 }
-.book a{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-}
-
-.book img{
-    width: 300px;
-    height: auto;
-    margin: 5% 50px 5% 50px;
+.book a {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.book img {
+  width: 300px;
+  height: auto;
+  margin: 5% 50px 5% 50px;
+}
 
 /* Bookdetail */
-.breadCrumb{
-    padding: 10px 16px;
-    list-style: none;
-    font-size: x-large;
+.breadCrumb {
+  padding: 10px 16px;
+  font-size: x-large;
 }
-.breadCrumb li{
-    display: inline;
+.breadCrumb li {
+  display: inline;
 }
-.breadCrumb li+li::before{
-    padding: 20px;
-    color: rgb(228, 10, 148);
-    content: ">";
+.breadCrumb li + li::before {
+  padding: 20px;
+  color: rgb(228, 10, 148);
+  content: ">";
 }
-.breadCrumb li a{
-    color: rgb(195, 46, 185);
+.breadCrumb li a {
+  color: rgb(195, 46, 185);
 }
 /* BookImg */
-.bookImg{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 5vw ;
+.bookImg {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5vw;
 }
-#largeImge{
-    flex:50%;
+#largeImge {
+  flex: 50%;
 }
-#smallImg{
-    text-align: left;
-    flex: 25%;
+#smallImg {
+  text-align: left;
+  flex: 25%;
 }
-#smallImg ul li{
-    list-style: none;
+#smallImg ul li img {
+  width: auto;
+  height: 200px;
+  margin-bottom: 20px;
 }
-#smallImg ul li img{
-    width: auto;
-    height: 200px;
+.pay {
+  text-align: left;
+  font-size: xx-large;
+  flex: 35%;
 }
-.pay{
-    text-align: left;
-    font-size: xx-large;
-    flex: 35%;
+.pay #ifo {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
 }
-.pay #ifo{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1rem;
+.pay p + p::before {
+  padding: 10px;
+  content: "|";
 }
-.pay p+p::before{
-    padding: 10px;
-    content: "|";
+.pay #price {
+  color: red;
 }
-.pay #price{
-    color: red;
+.pay #button {
+  background-color: rgb(65, 24, 24);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 30%;
 }
-.pay button{
-    background-color: rgb(65, 24, 24);
-    color: white;
-    padding:10px 20px 10px 20px;
-    border-radius: 30%;
+.pay #button:hover {
+  background-color: rgb(169, 143, 194);
 }
-.pay button :hover{ 
-    background-color:rebeccapurple ;
+.pay #button:active {
+  background-color: red;
 }
 /*class bookInfo */
-#bookInfo{
-    text-align: left;
-    font-size: xx-large;
+#bookInfo {
+  text-align: left;
+  font-size: xx-large;
 }
-#bookInfo h2{
-    font-size: 1em;
+#bookInfo h2 {
+  font-size: 1em;
 }
-#bookInfo p{
-    font-size: 0.75em;
+#bookInfo p {
+  font-size: 0.75em;
+}
+
+/* Contact Us form */
+#contact {
+  font-size: 5rem;
+}
+form {
+  text-align: left;
+  padding: 0 25% 0 25%;
+  display: flex;
+  flex-direction: column;
+}
+.form-row {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-label {
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+}
+.form-field input,
+.form-field select {
+  line-height: 50px;
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid;
+  padding: 2px;
+}
+.form-field ul {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  padding: 0%;
+}
+.form-field ul li {
+  display: inline-flex;
+}
+textarea {
+  width: 100%;
+  font-size: 18px;
+}
+.form-row button {
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 20px;
+  align-items: center;
+  height: auto;
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    margin: 0;
+  }
+  #welcome {
+    width: 100%;
+    background-image: linear-gradient(
+      rgb(223, 196, 178),
+      rgb(191, 118, 153),
+      rgb(223, 196, 178)
+    );
+    font-size: 80px;
+    padding: 5% 0 10% 0;
+    color: white;
+  }
+
+  .category {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: linear-gradient(
+      rgb(223, 196, 178),
+      rgb(190, 195, 197),
+      rgb(223, 196, 178)
+    );
+  }
+  .category a:hover {
+    color: white;
+    background-image: linear-gradient(
+      rgb(223, 196, 178),
+      rgb(190, 195, 197),
+      rgb(223, 196, 178)
+    );
+  }
+  .book {
+    display: inline;
+  }
+  .book a {
+    box-shadow: none;
+  }
+  .book img {
+    width: 300px;
+    height: auto;
+    margin: 5% 50px 0 50px;
+  }
+  .bookImg {
+    display: block;
+  }
+  #largeImg img {
+    width: 50%;
+  }
+
+  #smallImg ul li {
+    display: inline;
+    text-align: center;
+    width: 0;
+    padding-left: 15%;
+  }
+
+  #smallImg ul li img {
+    width: auto;
+    height: 100px;
+  }
+  .pay #price {
+    text-align: center;
+    color: red;
+  }
+
+  #nav a {
+    font-size: 25px;
+    border-radius: 50;
+    color: whitesmoke;
+  }
+
+  /* Footer */
+  footer nav {
+    display: inline;
+    text-align: center;
+  }
+  footer nav a {
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
+  }
 }
